@@ -1,6 +1,6 @@
 package com.jaures.demo.enums;
 
-enum AccountStatus {
-	CREATED, ACTIVATED , SUSPEN
+public enum AccountStatus {
+	CREATED, ACTIVATED , SUSPENDED
 
 }
