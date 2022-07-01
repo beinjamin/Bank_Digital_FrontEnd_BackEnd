@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import com.jaures.demo.enums.AccountStatus;
 
@@ -25,6 +26,7 @@ public class BankAccount {
 	private AccountStatus status;
 	@ManyToOne
 	private Customer customer;
+	@OneToMany(mappedBy="BankAccount")
 	private List<AccountOperation> accountOperations;
 
 }

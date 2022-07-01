@@ -3,6 +3,8 @@ package com.jaures.demo.entities;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.ManyToOne;
+
 import com.jaures.demo.enums.AccountStatus;
 import com.jaures.demo.enums.OperationType;
 
@@ -16,6 +18,8 @@ public class AccountOperation {
 	private Date operationDate;
 	private double amount;
 	private OperationType type;
+	
+	@ManyToOne
 	private BankAccount bankAccount;
 
 }
