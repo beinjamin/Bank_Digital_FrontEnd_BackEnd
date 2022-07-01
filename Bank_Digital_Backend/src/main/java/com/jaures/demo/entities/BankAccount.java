@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
 public class BankAccount {
 	private String id;
 	private double balance;
+	
 	private Date createAt;
 	private AccountStatus status;
 	
