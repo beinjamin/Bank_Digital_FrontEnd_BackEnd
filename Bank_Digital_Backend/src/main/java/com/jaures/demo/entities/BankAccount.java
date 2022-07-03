@@ -20,7 +20,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 @Entity
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name ="TYPE",length =4, discriminatorType= DiscriminatorType.STRING)
+@DiscriminatorColumn(name ="TYPE",length =4)
 @Data @NoArgsConstructor @AllArgsConstructor
 public class BankAccount {
 	@Id 
