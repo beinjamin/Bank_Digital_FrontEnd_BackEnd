@@ -1,5 +1,9 @@
 package com.jaures.demo.repositories;
 
-public interface CustomerRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.jaures.demo.entities.Customer;
+
+public interface CustomerRepository extends JpaRepository<Customer,Long> {
 
 }
