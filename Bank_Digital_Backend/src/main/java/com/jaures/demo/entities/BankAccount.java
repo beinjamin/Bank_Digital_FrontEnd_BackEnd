@@ -1,6 +1,7 @@
 package com.jaures.demo.entities;
 
 import java.util.Date;
+
 import java.util.List;
 
 import javax.persistence.DiscriminatorColumn;
@@ -30,7 +31,7 @@ public class BankAccount {
 	private AccountStatus status;
 	@ManyToOne
 	private Customer customer;
-	@OneToMany(mappedBy="BankAccount")
+	@OneToMany(mappedBy="bankAccount")
 	private List<AccountOperation> accountOperations;
 
 }
