@@ -3,6 +3,7 @@ package com.jaures.demo.entities;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,6 +20,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 @Entity
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name ="TYPE",length =4, discriminatorType= DiscriminatorType.STRING)
 @Data @NoArgsConstructor @AllArgsConstructor
 public class BankAccount {
 	@Id 
